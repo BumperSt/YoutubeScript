@@ -2,7 +2,10 @@
 
 <a id="play-video" href="#"><img width="32" src="./fechar.svg"></a><br />
 
-<div  id="ytplayer" style="display: none;"></div>
+<div  id="ytplayer" ></div>
+
+
+<iframe width="1903" height="480" src="https://www.youtube.com/embed/qi4HG_OGJIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <script>
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
@@ -15,11 +18,11 @@ $(document).ready(function() {
     player = new YT.Player('ytplayer', {
         height: '480',
         width: '853',
-        videoId: 'p4QN3sb7bDc',
+        videoId: 'OFDYHxGyz30',
         playerVars: {
             'autoplay': 1,
             'showinfo': 0,
-            'controls': 0,
+            'controls': 1,
             'mute' : 0,
         }
     });
